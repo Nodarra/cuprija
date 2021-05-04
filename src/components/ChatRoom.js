@@ -36,13 +36,13 @@ function ChatRoom() {
 
   return (
     <>
-      <div>
+      <div className="messages">
         {messages && messages.map(msg => <ChatMessage key={msg.id} message={msg} />)}
         <div ref={dummy}></div>
       </div>
 
       <form onSubmit={sendMessage}>
-        <input value={inputText} onChange={(e) => setInputText(e.target.value)} required />
+        <input value={inputText} onChange={(e) => setInputText(e.target.value)} required placeholder="Your message..."/>
         <button type="submit"><i class="fas fa-paper-plane"></i></button>
       </form>
     </>

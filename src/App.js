@@ -13,7 +13,7 @@ function App() {
   return (
     <div className="App">
       <header>
-          ĆUPRIJA
+          <h1>ĆUPRIJA</h1>
           <SignOut />
       </header>
       <section>
